@@ -1,17 +1,25 @@
 :root {
   --main-font: IBM Plex Mono;
-  --main-text-color: #F1B2CE;
-  --main-bg-color:#000028;
+  --main-text-color: #f1b2ce;
+  --main-bg-color: #000028;
   --regular-font-weight: 400;
   --bold-font-weight: 700;
   --font-size: 18px;
-  --acent-text-color:#000028;
+  --acent-text-color: #000028;
   --button-color: #ff0070;
   --accent-color: #ff0070;
-  --title-font-color:#DB00FF;
+  --title-font-color: #db00ff;
   --line-height: 23.4px;
   --bg-image: url(../images/cover-image-dark.png);
-  --hover:rgba(255, 0, 112, 0.40);
+  --hover: rgba(255, 0, 112, 0.4);
   --focus: #ff0070;
 }
 
+.page.theme_light .header__decoration-element {
+  color: var(--accent-color);
+  position: absolute;
+  justify-self: flex-end;
+  padding-inline-end: 9px;
+  font-size: var(--font-size);
+  line-height: 26px;
+}
