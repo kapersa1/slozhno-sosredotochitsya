@@ -48,6 +48,9 @@
 
 @media (prefers-color-scheme: dark) {
 
+  .page.theme_light .header__decoration-element {
+    display: block;
+  }
   :root {
     --main-text-color: #F1B2CE;
     --main-bg-color:#000028;

@@ -44,9 +44,7 @@ root.theme_light {
   --button-color: #353430;
 }
 
-.page.page.theme_light .header__decoration-element {
-  display: none;
-}
+
 
 
   @media (prefers-color-scheme: light) {
