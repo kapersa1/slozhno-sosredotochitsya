@@ -15,11 +15,4 @@
   --focus: #ff0070;
 }
 
-.page.theme_light .header__decoration-element {
-  color: var(--accent-color);
-  position: absolute;
-  justify-self: flex-end;
-  padding-inline-end: 9px;
-  font-size: var(--font-size);
-  line-height: 26px;
-}
+

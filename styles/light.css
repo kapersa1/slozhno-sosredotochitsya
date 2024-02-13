@@ -44,12 +44,14 @@ root.theme_light {
   --button-color: #353430;
 }
 
-
+.theme_light .header__decoration-element {
+  display: none;
+}
 
 
   @media (prefers-color-scheme: light) {
 
-    .page.theme_light .header__decoration-element {
+    .header__decoration-element {
       display: none;
     }
 
