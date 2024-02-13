@@ -334,7 +334,7 @@
   }
 
   .header::after {
-    margin-block-start: 31px;
+    margin-block-start: 140px;
     margin-block-end: 20px;
   }
 
@@ -353,10 +353,6 @@
   .header_text {
     padding-inline-start: 364px;
     display: inline;
-  }
-
-  .header::after {
-    margin-block-start: 140px;
   }
 
   .main {
@@ -603,7 +599,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
   }
-  
+
   .content__textblock-paragraph-thirdgrid {
     width: 315px;
     grid-column-start: 3;
