@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  width: 100vw;
+ 
 }
 
 .header {
@@ -103,12 +103,14 @@
   background-color: transparent;
   list-style-type: none;
   appearance: none;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--button-color);
   box-shadow: none;
   pointer-events: none;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -318,7 +320,7 @@
   margin-inline-start: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (width >= 768px) {
 
   .page {
     min-inline-size: 768px;
@@ -454,7 +456,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   
   .page {
     min-inline-size: 1024px;

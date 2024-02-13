@@ -27,22 +27,6 @@
 }
 
 
-root.theme_light {
-  --main-font: IBM Plex Mono;
-  --main-text-color: #353430;
-  --main-bg-color:#FFF1F7;
-  --regular-font-weight: 400;
-  --bold-font-weight: 700;
-  --font-size: 18px;
-  --acent-text-color:#353430;
-  --accent-color: #FF8DCB;
-  --title-font-color:#FFC2E6;
-  --line-height: 23.4px;
-  --bg-image: none;
-  --focus:#353430;
-  --hover:rgba(50, 49, 45, 0.40);
-  --button-color: #353430;
-}
 
 .theme_light .header__decoration-element {
   display: none;
