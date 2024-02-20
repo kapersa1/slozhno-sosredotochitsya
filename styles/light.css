@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   
-  --main-font: IBM Plex Mono;
+  --main-font: 'IBM Plex Mono', 'Monospace', sans-serif;
   --main-text-color: #353430;
   --main-bg-color:#FFF1F7;
   --regular-font-weight: 400;
