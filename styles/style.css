@@ -372,7 +372,6 @@
     align-self: center;
     margin-inline: 0px;
     padding-inline-start: 380px;
-    display: inline;
     margin-block-end: 22px;
     margin-inline-end: 20px;
   }
@@ -426,7 +425,6 @@
   .content__image-icecream {
     display: block;
     height: 100%;
-    width: 100%;
     object-fit: cover;
     grid-column: 3;
     grid-row: 1 / span 2;
@@ -435,8 +433,6 @@
   .content__image-tape {
     display: block;
     height: 100%;
-    width: 100%;
-
     overflow: hidden;
     object-fit: cover;
     grid-column: 1;
@@ -482,7 +478,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 12px;
     justify-content: center;
     margin-block-start: 0px;
     text-align: start;
@@ -506,13 +501,11 @@
   }
 
   .content-section {
-    flex-direction: row;
     margin-block-start: 55px;
     gap: 20px;
   }
 
   .content__title {
-    flex: none;
     width: 315px;
   }
 
