@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  
 }
 
 .header {
@@ -174,7 +173,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  
 }
 
 .content-section {
@@ -185,8 +183,6 @@
   margin-block-start: 40px;
   gap: 20px;
 }
-
-
 
 .content-section-second {
   margin-inline: 10px;
@@ -265,7 +261,7 @@
 }
 
 .content__textblock-link:focus {
-  outline: none;
+  border: none;
 }
 
 .content__paragraph {
@@ -316,7 +312,7 @@
 .footer {
   height: 100vh;
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
 }
@@ -329,7 +325,6 @@
   font-weight: var(--bold-font-weight);
   line-height: 82.5%;
   margin-inline: 13px;
- 
 }
 
 @media (width >= 768px) {
@@ -342,10 +337,16 @@
     padding-inline-end: 30px;
   }
 
+  .header {
+    grid-template-rows: 1fr auto 1fr;
+  }
+
   .header__theme-menu {
-    margin-inline: 20px;
-    margin-block-end: 50px;
-    margin-block-start: 192px;
+    margin-inline-end: 20px;
+    margin-block-end: 0px;
+    margin-block-start: 13px;
+    justify-self: flex-end;
+    align-self: center;
   }
 
   .decorated-zone::before {
@@ -357,20 +358,24 @@
   }
 
   .header_title {
-    margin-inline: 00px;
-    margin-block-start: 105px;
+    margin-block-start: 0px;
+    justify-self: flex-start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-end: 141px;
+    align-self: center;
+    margin-block-end: 0px;
+    margin-inline: 0px;
+    height: 100%;
   }
 
   .header_text {
-    margin-inline: 20px;
-    padding-inline-start: 364px;
+    justify-self: flex-end;
+    align-self: center;
+    margin-inline: 0px;
+    padding-inline-start: 380px;
     display: inline;
-    margin-block-end: 162px;
+    margin-block-end: 22px;
+    margin-inline-end: 20px;
   }
-
-  
 
   .content-section {
     flex-direction: row;
@@ -384,7 +389,6 @@
     flex-direction: row;
     margin-block-start: 0px;
     margin-block-end: 60px;
-
   }
 
   .content__title {
@@ -401,17 +405,15 @@
   .content-section-images {
     margin-inline: 20px;
     margin-block-start: 0px;
-    margin-block-end: 60px;
+    margin-block-end: 40px;
   }
 
   .content__images-block {
-    
     margin-block-start: 10px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
     max-height: 1440px;
     gap: 21px;
-    
   }
 
   .content__image-sunset {
@@ -419,13 +421,12 @@
     object-fit: cover;
     grid-column: 1 / span 2;
     grid-row: 1;
-    
   }
 
   .content__image-icecream {
     display: block;
     height: 100%;
-    width:100% ;
+    width: 100%;
     object-fit: cover;
     grid-column: 3;
     grid-row: 1 / span 2;
@@ -434,7 +435,7 @@
   .content__image-tape {
     display: block;
     height: 100%;
-    width:100% ;
+    width: 100%;
 
     overflow: hidden;
     object-fit: cover;
@@ -453,21 +454,18 @@
     display: block;
     object-fit: cover;
     grid-column: 2 / span 2;
-    grid-row: 3 ;
+    grid-row: 3;
   }
 
- 
-
   .footer_title {
-   
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 @media (width >= 1024px) {
-
   .page {
     min-inline-size: 1024px;
+    margin: auto;
   }
 
   .header__decoration-element {
@@ -475,9 +473,11 @@
   }
 
   .header__theme-menu {
+    align-self: flex-start;
     margin-block-start: 20px;
     margin-block-end: 0px;
-    margin-inline-end: 398px;
+    justify-self: center;
+    margin-inline-end: 11px;
   }
 
   .header__theme-menu-list {
@@ -489,23 +489,21 @@
   }
 
   .header_title {
-    margin-block-start: 273px;
-    margin-block-end: 114px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     margin-inline-start: 0px;
   }
 
   .header_text {
-    margin-inline-start: 494px;
-    padding-inline-start: 20px;
+    margin-inline-start: 195px;
+    padding-inline-start: 315px;
     margin-inline-end: 20px;
-    margin-block-end: 135px;
-    display: inline;
+    margin-block-end: 20px;
   }
 
   .header_textbackgroundcolor {
     padding-inline-end: 0px;
   }
-
 
   .content-section {
     flex-direction: row;
@@ -518,17 +516,9 @@
     width: 315px;
   }
 
-  
-
   .content__textblock-second {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: none;
     gap: 20px;
   }
-
-
-  .content-section-images {
-    margin-block-end: 40px;
-
-}
 }
